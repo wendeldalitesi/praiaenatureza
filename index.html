@@ -71,7 +71,7 @@
     .hero {
       position: relative;
       background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(15, 23, 42, 0.65) 100%),
-                  url('foto01-capa-varanda-serra.jpg') center/cover no-repeat;
+                  url('varanda.jpg') center/cover no-repeat;
       min-height: 80vh;
       display: flex;
       align-items: center;
@@ -273,7 +273,7 @@
       font-size: 0.9rem;
     }
 
-    /* Galeria Corrigida com Z-Index Forçado */
+    /* Galeria */
     .gallery-bg {
       background: #fff;
     }
@@ -570,7 +570,7 @@
     </div>
   </section>
 
-  <!-- Galeria com Fotos Reais e Legendas Alinhadas -->
+  <!-- Galeria com Novos Nomes de Arquivos Upeados -->
   <section class="gallery-bg">
     <div class="container">
       <div class="section-header">
@@ -580,62 +580,62 @@
 
       <div class="gallery-grid">
         <!-- 1. ÁREA SOCIAL E VARANDA -->
-        <div class="gallery-item" onclick="openModal('foto01-capa-varanda-serra.jpg', 'Varanda com Vista para a Serra')">
-          <img src="foto01-capa-varanda-serra.jpg" alt="Varanda com Vista para a Serra" />
+        <div class="gallery-item" onclick="openModal('varanda.jpg', 'Varanda com Vista para a Serra')">
+          <img src="varanda.jpg" alt="Varanda com Vista para a Serra" />
           <div class="gallery-label">Varanda com Vista para a Serra</div>
         </div>
 
-        <div class="gallery-item" onclick="openModal('foto02-sala-estar-tv.jpg', 'Sala de Estar com Smart TV')">
-          <img src="foto02-sala-estar-tv.jpg" alt="Sala de Estar com Smart TV" />
+        <div class="gallery-item" onclick="openModal('sala-estar.jpg', 'Sala de Estar com Smart TV')">
+          <img src="sala-estar.jpg" alt="Sala de Estar com Smart TV" />
           <div class="gallery-label">Sala de Estar com Smart TV</div>
         </div>
 
-        <div class="gallery-item" onclick="openModal('foto03-sala-jantar.jpg', 'Sala de Jantar Integrada')">
-          <img src="foto03-sala-jantar.jpg" alt="Sala de Jantar Integrada" />
+        <div class="gallery-item" onclick="openModal('sala-jantar.jpg', 'Sala de Jantar Integrada')">
+          <img src="sala-jantar.jpg" alt="Sala de Jantar Integrada" />
           <div class="gallery-label">Sala de Jantar Integrada</div>
         </div>
 
+        <div class="gallery-item" onclick="openModal('sala-ampla.jpg', 'Ambiente Social Amplo e Arejado')">
+          <img src="sala-ampla.jpg" alt="Ambiente Sala Ampla" />
+          <div class="gallery-label">Ambiente Integrado e Amplo</div>
+        </div>
+
         <!-- 2. DORMITÓRIOS -->
-        <div class="gallery-item" onclick="openModal('foto08-quarto-beliches-amplo.jpg', 'Quarto Principal com Sacada e Vista')">
-          <img src="foto08-quarto-beliches-amplo.jpg" alt="Quarto Principal com Sacada e Vista" />
-          <div class="gallery-label">Quarto Principal com Sacada</div>
+        <div class="gallery-item" onclick="openModal('quarto-casal-2.jpg', 'Quarto Principal de Casal')">
+          <img src="quarto-casal-2.jpg" alt="Quarto Principal de Casal" />
+          <div class="gallery-label">Quarto Principal (Casal)</div>
         </div>
 
-        <div class="gallery-item" onclick="openModal('lavanderia.jpg', 'Quarto de Casal Confortável')">
-          <img src="lavanderia.jpg" alt="Quarto de Casal Confortável" />
-          <div class="gallery-label">Quarto de Casal Confortável</div>
+        <div class="gallery-item" onclick="openModal('quarto-com-beliches.jpg', 'Quarto com Beliches (4 Camas)')">
+          <img src="quarto-com-beliches.jpg" alt="Quarto com Beliches" />
+          <div class="gallery-label">Quarto Coletivo (2 Beliches)</div>
         </div>
 
-        <div class="gallery-item" onclick="openModal('foto11-banheiro-1.jpg', 'Quarto com Cama Casal e Auxiliar')">
-          <img src="foto11-banheiro-1.jpg" alt="Quarto com Cama Casal e Auxiliar" />
-          <div class="gallery-label">Acomodação Casal + Auxiliar</div>
-        </div>
-
-        <div class="gallery-item" onclick="openModal('foto16-vista-panoramica.jpg', 'Quarto Coletivo com 2 Beliches (4 Camas)')">
-          <img src="foto16-vista-panoramica.jpg" alt="Quarto Coletivo com 2 Beliches" />
-          <div class="gallery-label">Quarto com Beliches (4 Camas)</div>
-        </div>
-
-        <!-- 3. COZINHA -->
+        <!-- 3. COZINHA E SERVIÇO -->
         <div class="gallery-item" onclick="openModal('cozinha.jpg', 'Cozinha Completa com Utensílios')">
           <img src="cozinha.jpg" alt="Cozinha Completa com Utensílios" />
           <div class="gallery-label">Cozinha Completa com Utensílios</div>
         </div>
 
+        <div class="gallery-item" onclick="openModal('lavanderia.jpg', 'Área de Serviço com Máquina')">
+          <img src="lavanderia.jpg" alt="Área de Serviço" />
+          <div class="gallery-label">Área de Serviço / Lavanderia</div>
+        </div>
+
         <!-- 4. BANHEIROS -->
-        <div class="gallery-item" onclick="openModal('foto06-quarto-casal-iluminado.jpg', 'Primeiro Banheiro Social')">
-          <img src="foto06-quarto-casal-iluminado.jpg" alt="Primeiro Banheiro Social" />
+        <div class="gallery-item" onclick="openModal('Banheiro-social.jpg', 'Banheiro Social Completo')">
+          <img src="Banheiro-social.jpg" alt="Banheiro Social" />
           <div class="gallery-label">Primeiro Banheiro Social</div>
         </div>
 
-        <div class="gallery-item" onclick="openModal('foto13-fachada-edificio.jpg', 'Segundo Banheiro Completo')">
-          <img src="foto13-fachada-edificio.jpg" alt="Segundo Banheiro Completo" />
-          <div class="gallery-label">Segundo Banheiro Completo</div>
+        <div class="gallery-item" onclick="openModal('banheiro.jpg', 'Segundo Banheiro Social')">
+          <img src="banheiro.jpg" alt="Segundo Banheiro" />
+          <div class="gallery-label">Segundo Banheiro Social</div>
         </div>
 
         <!-- 5. ESTRUTURA EXTERNA / FACHADA -->
-        <div class="gallery-item" onclick="openModal('quarto-casal.jpg', 'Fachada do Prédio Residencial')">
-          <img src="quarto-casal.jpg" alt="Fachada do Prédio Residencial" />
+        <div class="gallery-item" onclick="openModal('fachada.jpg', 'Fachada do Edifício Residencial')">
+          <img src="fachada.jpg" alt="Fachada do Prédio" />
           <div class="gallery-label">Fachada do Prédio Residencial</div>
         </div>
       </div>
