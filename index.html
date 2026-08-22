@@ -4,17 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Praia e Natureza | Temporada na Enseada — Guarujá</title>
-  <meta name="description" content="Apartamento familiar e espaçoso de 92 m² na Enseada, Guarujá. Acomoda até 8 hóspedes com 2 quartos, 2 banheiros e garagem. A 850m da praia." />
+  <meta name="description" content="Apartamento familiar e espaçoso de 92 m² na Enseada, Guarujá. Acomoda até 8 hóspedes com 2 quartos, 2 banheiros e garagem privativa. A 850m da praia." />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     :root {
       --primary: #0284c7;
       --primary-dark: #0369a1;
-      --emerald: #059669;
       --whatsapp: #25d366;
       --airbnb: #ff385c;
       --dark: #0f172a;
-      --dark-light: #1e293b;
       --gray-bg: #f8fafc;
       --card-bg: #ffffff;
       --text: #334155;
@@ -61,13 +59,19 @@
       color: #38bdf8;
       text-decoration: none;
       font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .topbar a:hover {
+      text-decoration: underline;
     }
 
     /* Hero */
     .hero {
       position: relative;
       background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(15, 23, 42, 0.65) 100%),
-                  url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+                  url('img/foto01-capa-varanda-serra.jpg') center/cover no-repeat;
       min-height: 80vh;
       display: flex;
       align-items: center;
@@ -467,7 +471,7 @@
   <div class="topbar">
     <div class="container topbar-flex">
       <span><i class="fas fa-map-marker-alt"></i> Jardim Três Marias / Enseada — Guarujá, SP</span>
-      <span><i class="fab fa-whatsapp"></i> Fale com Álex: <a href="https://wa.me/5513997547075">(13) 99754-7075</a></span>
+      <span><a href="https://wa.me/5513997547075?text=Olá%20Álex!%20Gostaria%20de%20consultar%20disponibilidade%20para%20o%20apartamento%20Praia%20e%20Natureza." target="_blank"><i class="fab fa-whatsapp"></i> Falar com o Anfitrião no WhatsApp</a></span>
     </div>
   </div>
 
@@ -480,10 +484,10 @@
       
       <div class="hero-btns">
         <a href="https://wa.me/5513997547075?text=Olá%20Álex!%20Gostaria%20de%20consultar%20disponibilidade%20para%20o%20apartamento%20Praia%20e%20Natureza." target="_blank" class="btn btn-whatsapp">
-          <i class="fab fa-whatsapp"></i> Falar com o Anfitrião
+          <i class="fab fa-whatsapp"></i> Consultar Disponibilidade
         </a>
         <a href="https://www.airbnb.com.br/rooms/1518504746512691111" target="_blank" class="btn btn-airbnb">
-          <i class="fab fa-airbnb"></i> Anúncio no Airbnb
+          <i class="fab fa-airbnb"></i> Ver no Airbnb
         </a>
       </div>
     </div>
@@ -509,7 +513,7 @@
       <i class="fas fa-mountain"></i>
       <div>
         <h3>50m da Serra</h3>
-        <p>Vista verde e ar fresco</p>
+        <p>Vista verde e ar puro</p>
       </div>
     </div>
     <div class="highlight-card">
@@ -551,38 +555,74 @@
     </div>
   </section>
 
-  <!-- Galeria -->
+  <!-- Galeria com Fotos Reais do Imóvel -->
   <section class="gallery-bg">
     <div class="container">
       <div class="section-header">
-        <h2>Ambientes e Estrutura</h2>
-        <p>Espaços integrados, bem equipados e preparados para receber você</p>
+        <h2>Galeria de Fotos do Imóvel</h2>
+        <p>Clique em qualquer foto para visualizar em tamanho expandido</p>
       </div>
 
       <div class="gallery-grid">
-        <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80')">
-          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Varanda e Vista" />
+        <div class="gallery-item" onclick="openModal('img/foto01-capa-varanda-serra.jpg')">
+          <img src="img/foto01-capa-varanda-serra.jpg" alt="Varanda e Vista para a Serra" />
           <div class="gallery-label">Varanda com Vista para a Serra</div>
         </div>
-        <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80')">
-          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Sala de Estar" />
+        <div class="gallery-item" onclick="openModal('img/foto02-sala-estar-tv.jpg')">
+          <img src="img/foto02-sala-estar-tv.jpg" alt="Sala de Estar" />
           <div class="gallery-label">Sala de Estar com Smart TV</div>
         </div>
-        <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80')">
-          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Sala de Jantar" />
-          <div class="gallery-label">Mesa de Jantar Integrada</div>
+        <div class="gallery-item" onclick="openModal('img/foto03-sala-jantar.jpg')">
+          <img src="img/foto03-sala-jantar.jpg" alt="Sala de Jantar" />
+          <div class="gallery-label">Sala de Jantar Integrada</div>
         </div>
-        <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80')">
-          <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80" alt="Quarto de Casal" />
+        <div class="gallery-item" onclick="openModal('img/foto04-sala-varanda-integrada.jpg')">
+          <img src="img/foto04-sala-varanda-integrada.jpg" alt="Visão Sala e Varanda" />
+          <div class="gallery-label">Ambiente Sala e Varanda</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('img/foto05-quarto-casal.jpg')">
+          <img src="img/foto05-quarto-casal.jpg" alt="Quarto de Casal" />
+          <div class="gallery-label">Quarto de Casal (Cama + Auxiliar)</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('img/foto06-quarto-casal-iluminado.jpg')">
+          <img src="img/foto06-quarto-casal-iluminado.jpg" alt="Quarto de Casal Iluminado" />
           <div class="gallery-label">Quarto de Casal Aconchegante</div>
         </div>
-        <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80')">
-          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80" alt="Quarto Coletivo" />
+        <div class="gallery-item" onclick="openModal('img/foto07-quarto-beliches.jpg')">
+          <img src="img/foto07-quarto-beliches.jpg" alt="Quarto com Beliches" />
+          <div class="gallery-label">Quarto Coletivo (2 Beliches)</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('img/foto08-quarto-beliches-amplo.jpg')">
+          <img src="img/foto08-quarto-beliches-amplo.jpg" alt="Quarto Coletivo" />
           <div class="gallery-label">Quarto com Beliches (4 Camas)</div>
         </div>
-        <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80')">
-          <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Cozinha Completa" />
-          <div class="gallery-label">Cozinha com Bancada e Utensílios</div>
+        <div class="gallery-item" onclick="openModal('img/foto09-cozinha-completa.jpg')">
+          <img src="img/foto09-cozinha-completa.jpg" alt="Cozinha Completa" />
+          <div class="gallery-label">Cozinha Completa com Utensílios</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('img/foto10-area-servico.jpg')">
+          <img src="img/foto10-area-servico.jpg" alt="Área de Serviço" />
+          <div class="gallery-label">Área de Serviço com Máquina</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('img/foto11-banheiro-1.jpg')">
+          <img src="img/foto11-banheiro-1.jpg" alt="Banheiro 1" />
+          <div class="gallery-label">Banheiro Social</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('img/foto12-banheiro-2.jpg')">
+          <img src="img/foto12-banheiro-2.jpg" alt="Banheiro 2" />
+          <div class="gallery-label">Segundo Banheiro Completo</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('img/foto13-fachada-edificio.jpg')">
+          <img src="img/foto13-fachada-edificio.jpg" alt="Fachada do Edifício" />
+          <div class="gallery-label">Fachada do Edifício Gaivotas VI</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('img/foto14-sacada-vista-verde.jpg')">
+          <img src="img/foto14-sacada-vista-verde.jpg" alt="Sacada e Vista Verde" />
+          <div class="gallery-label">Sacada com Vista para a Mata</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('img/foto16-vista-panoramica.jpg')">
+          <img src="img/foto16-vista-panoramica.jpg" alt="Vista do Bairro" />
+          <div class="gallery-label">Vista Panorâmica do Bairro</div>
         </div>
       </div>
     </div>
@@ -607,12 +647,12 @@
     </div>
   </section>
 
-  <!-- Guia Local -->
+  <!-- Guia Local e Conveniências -->
   <section class="guide-bg">
     <div class="container">
       <div class="section-header">
         <h2>Entorno e Atrações Próximas</h2>
-        <p>Localização prática e segura no Jardim Três Marias</p>
+        <p>Localização prática e tranquila na região da Enseada</p>
       </div>
 
       <div class="guide-grid">
@@ -620,45 +660,45 @@
           <i class="fas fa-umbrella-beach"></i>
           <h3>Praias & Lazer</h3>
           <ul>
-            <li><strong>Praia da Enseada:</strong> 850m (águas limpas e quiosques).</li>
-            <li><strong>Acqua Mundo:</strong> Maior aquário da América do Sul.</li>
-            <li><strong>Mirante do Maluf:</strong> Vista panorâmica da costa.</li>
-            <li><strong>Canto do Tortuga:</strong> Ideal para passeios de barco e SUP.</li>
+            <li><strong>Praia da Enseada:</strong> A 850 metros (águas calmas, esportes e quiosques).</li>
+            <li><strong>Acqua Mundo:</strong> Maior aquário da América do Sul (na própria Enseada).</li>
+            <li><strong>Mirante do Morro da Campina (Maluf):</strong> Vista panorâmica da orla.</li>
+            <li><strong>Canto do Tortuga:</strong> Ideal para passeios de barco, caiaque e SUP.</li>
           </ul>
         </div>
 
         <div class="guide-card">
           <i class="fas fa-shopping-cart"></i>
-          <h3>Compras & Serviços</h3>
+          <h3>Mercados & Farmácias</h3>
           <ul>
             <li><strong>Carrefour Hipermercado:</strong> Av. Dom Pedro I (~1 km).</li>
-            <li><strong>Extra Mercado & Mini Extra:</strong> A poucos minutos.</li>
-            <li><strong>Açougue Bom Beef:</strong> Carnes especiais para churrasco.</li>
-            <li><strong>Farmácias e Padarias:</strong> Menos de 800m.</li>
+            <li><strong>Extra Mercado & Mercadão:</strong> Av. Dom Pedro I.</li>
+            <li><strong>Farmácias e Drogarias:</strong> Na região da Av. Dom Pedro I.</li>
+            <li><strong>Mercadinhos Locais:</strong> A poucos passos para compras do dia a dia.</li>
           </ul>
         </div>
 
         <div class="guide-card">
           <i class="fas fa-utensils"></i>
-          <h3>Gastronomia</h3>
+          <h3>Gastronomia na Região</h3>
           <ul>
-            <li><strong>Hélio Rei da Costela:</strong> Restaurante tradicional no bairro.</li>
-            <li><strong>Rei do Mocotó & Pizzaria:</strong> Refeições e pizzas.</li>
-            <li><strong>Quiosques da Orla:</strong> Frutos do mar frescos na praia.</li>
+            <li><strong>Restaurantes da Orla da Enseada:</strong> Frutos do mar frescos, peixes e porções.</li>
+            <li><strong>Pizzarias Tradicionais:</strong> Diversas opções para jantar na região.</li>
+            <li><strong>Padarias e Cafés:</strong> Pães artesanais e café da manhã a poucos minutos.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Rodapé -->
+  <!-- Rodapé / Contato -->
   <footer>
     <div class="container footer-box">
-      <h2>Faça sua Reserva Direta</h2>
-      <p>Fale diretamente com o anfitrião <strong>Álex</strong> no WhatsApp para consultar datas, pacotes e tirar dúvidas.</p>
+      <h2>Reserve sua Estadia Conosco</h2>
+      <p>Converse diretamente com o anfitrião <strong>Álex</strong> no WhatsApp para consultar datas, valores e tirar suas dúvidas.</p>
       
       <a href="https://wa.me/5513997547075?text=Olá%20Álex!%20Gostaria%20de%20consultar%20as%20diárias%20do%20apartamento%20Praia%20e%20Natureza." target="_blank" class="btn btn-whatsapp" style="font-size: 1.15rem; padding: 1.1rem 2.4rem;">
-        <i class="fab fa-whatsapp"></i> Falar no WhatsApp (13) 99754-7075
+        <i class="fab fa-whatsapp"></i> Reservar via WhatsApp
       </a>
 
       <p class="footer-copy">© 2026 Praia e Natureza — Jardim Três Marias / Enseada, Guarujá/SP.</p>
